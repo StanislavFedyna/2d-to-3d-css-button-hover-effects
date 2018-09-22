@@ -1,89 +1,95 @@
-body{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: #2196f3;
+body
+{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #2196f3;
+    align-items: center;
+    justify-content: center;
 }
 
-a{
-  position: relative;
-  padding: 20px 20px 20px 30px;
-  color: #ffffff;
-  font-size: 40px;
-  font-family: sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+a
+{
+    font-family: sans-serif;
+    font-size: 40px;
+    position: relative;
+    padding: 20px 20px 20px 30px;
+    -webkit-transition: .5s;
+       -moz-transition: .5s;
+        -ms-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+    text-decoration: none;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #fff;
 }
-a:hover{
-  background: #2196f3;
-  transition-delay: 2s;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  box-shadow: -30px 30px 50px rgba(0,0,0,0.4);
-  transform: rotate(-30deg) skew(25deg);
-  -webkit-transform: rotate(-30deg) skew(25deg);
-  -moz-transform: rotate(-30deg) skew(25deg);
-  -ms-transform: rotate(-30deg) skew(25deg);
-  -o-transform: rotate(-30deg) skew(25deg);
-}
-
-a:before, a:after{
-  content: '';
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  background: #fff;
-  pointer-events: none;
-  transform-style: linear;
-  transition-property: width, opacity, transform, box-shadow;
-  transition-duration: 0.5s;
-
+a:hover
+{
+    -webkit-transition: .5s;
+       -moz-transition: .5s;
+        -ms-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+    transition-delay: 2s;
+    -webkit-transform: rotate(-30deg) skew(25deg);
+       -moz-transform: rotate(-30deg) skew(25deg);
+        -ms-transform: rotate(-30deg) skew(25deg);
+         -o-transform: rotate(-30deg) skew(25deg);
+            transform: rotate(-30deg) skew(25deg);
+    background: #2196f3;
+    box-shadow: -30px 30px 50px rgba(0,0,0,.4);
 }
 
-a:before{
-  top: 0;
-  left: 0;
-
+a:before,
+a:after
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    content: '';
+    transition-duration: .5s;
+    transition-property: width, opacity, transform, box-shadow;
+    pointer-events: none;
+    background: #fff;
+    transform-style: linear;
 }
 
-a:after{
-  top: 0;
-  right: 0;
-  
+a:before
+{
+    top: 0;
+    left: 0;
 }
 
-a:hover:before{
-  width: 100%;
-  opacity: 0.1;
-  transform:translate(5px, -5px);
-  -webkit-transform:translate(5px, -5px);
-  -moz-transform:translate(5px, -5px);
-  -ms-transform:translate(5px, -5px);
-  -o-transform:translate(5px, -5px);
-  box-shadow: +2px 2px 2px rgba(0,0,0,0.1);
-  transition-delay: 0s, 0.5s, 1s, 1.5s;
+a:after
+{
+    top: 0;
+    right: 0;
 }
 
-a:hover:after{
-  width: 100%;
-  opacity: 0.1;
-  transform:translate(10px, -10px);
-  -webkit-transform:translate(10px, -10px);
-  -moz-transform:translate(10px, -10px);
-  -ms-transform:translate(10px, -10px);
-  -o-transform:translate(10px, -10px);
-  box-shadow: +2px 2px 2px rgba(0,0,0,0.1);
-  transition-delay: 0s, 0.5s, 1s, 1.5s;
+a:hover:before
+{
+    width: 100%;
+    transition-delay: 0s, .5s, 1s, 1.5s;
+    -webkit-transform: translate(5px, -5px);
+       -moz-transform: translate(5px, -5px);
+        -ms-transform: translate(5px, -5px);
+         -o-transform: translate(5px, -5px);
+            transform: translate(5px, -5px);
+    opacity: .1;
+    box-shadow: +2px 2px 2px rgba(0,0,0,.1);
+}
+
+a:hover:after
+{
+    width: 100%;
+    transition-delay: 0s, .5s, 1s, 1.5s;
+    -webkit-transform: translate(10px, -10px);
+       -moz-transform: translate(10px, -10px);
+        -ms-transform: translate(10px, -10px);
+         -o-transform: translate(10px, -10px);
+            transform: translate(10px, -10px);
+    opacity: .1;
+    box-shadow: +2px 2px 2px rgba(0,0,0,.1);
 }
