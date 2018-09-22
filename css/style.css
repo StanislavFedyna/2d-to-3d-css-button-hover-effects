@@ -25,13 +25,18 @@ a{
 }
 a:hover{
   background: #2196f3;
+  transition-delay: 2s;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
   box-shadow: -30px 30px 50px rgba(0,0,0,0.4);
-  
+  transform: rotate(-30deg) skew(25deg);
+  -webkit-transform: rotate(-30deg) skew(25deg);
+  -moz-transform: rotate(-30deg) skew(25deg);
+  -ms-transform: rotate(-30deg) skew(25deg);
+  -o-transform: rotate(-30deg) skew(25deg);
 }
 
 a:before, a:after{
